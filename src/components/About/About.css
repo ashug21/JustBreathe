@@ -1,0 +1,57 @@
+.about-harpreet-5 {
+    width: 100%;
+    background: #F3F4F6;
+    padding: 20px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+}
+
+.about-harpreet-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.about-harpreet-h-5 {
+    color: #235656;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin-bottom: 2px;
+}
+
+.about-harpreet-p-5 {
+    color: #3B5050;
+    line-height: 1.35;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.harpreet-img {
+    width: 300px;      /* makes it wider */
+    height: 270px;     /* keep SAME height as before */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-harpreet-5 {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 25px;
+    }
+
+    .about-harpreet-content {
+        text-align: center;
+    }
+
+    .harpreet-img {
+        width: 150px;
+    }
+}

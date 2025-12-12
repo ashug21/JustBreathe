@@ -1,0 +1,287 @@
+.footer13 {
+    background: #EEF5F3;
+    color: #235656;
+    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    padding: 48px 20px 24px;
+    box-shadow: 0 -1px 0 rgba(35,86,86,0.04);
+}
+
+.footer-container13 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 1fr;
+}
+
+.footer-brand13 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.footer-logo13 {
+    object-fit: contain;
+    filter: none;
+    height: 100px;
+    width: 200px;
+    margin-left: -48px;
+}
+
+.footer-desc13 {
+    color: #235656;
+    max-width: 360px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.footer-socials13 {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.social-link13 {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background: #A8D5BA;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+    box-shadow: 0 2px 8px rgba(35,86,86,0.06);
+}
+
+.social-link13:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(35,86,86,0.12);
+}
+
+.footer-links-grid13 {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+}
+
+.footer-col13 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+
+.footer-title13 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #235656;
+    margin: 0;
+}
+
+.footer-list13 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 8px;
+}
+
+.footer-list13 a {
+    color: #235656;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: .95;
+    transition: opacity .15s ease, transform .12s ease;
+}
+
+.footer-list13 a:hover {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+.footer-address13,
+.footer-hours13 {
+    font-size: 14px;
+    color: #235656;
+    line-height: 1.5;
+}
+
+.footer-note13 {
+    font-size: 14px;
+    color: #235656;
+    opacity: .95;
+}
+
+
+.newsletter-form13 {
+    display: flex;
+    flex-direction: column;        /* input on top, button below */
+    gap: 12px;
+    width: 100%;
+}
+
+.newsletter-input13 {
+    width: 100%;                   /* full width */
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(35,86,86,0.12);
+    background: #fff;
+    font-size: 15px;
+    color: #235656;
+    box-sizing: border-box;
+}
+
+.newsletter-btn13 {
+    width: 100%;                  /* button also full width */
+    padding: 14px 16px;
+    border-radius: 10px;
+    background: #235656;
+    color: #FFF5E9;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .12s ease, opacity .12s ease;
+    text-align: center;
+}
+
+.newsletter-btn13:hover {
+    transform: translateY(-2px);
+    opacity: .95;
+}
+
+
+
+.footer-bottom13 {
+    margin-top: 28px;
+    border-top: 1px solid rgba(35,86,86,0.06);
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+
+}
+
+.footer-legal13 {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 400px;
+}
+
+.footer-legal13 small {
+    color: #235656;
+    opacity: .85;
+    font-size: 13px;
+}
+
+.legal-link13 {
+    color: #235656;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: .9;
+}
+
+.footer-credit13 small {
+    color: #235656;
+    opacity: .7;
+    font-size: 13px;
+}
+
+/* Icons */
+.instagram_icon-13,
+.whatsapp_icon-13 {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: block;
+    transition: .25s ease;
+}
+
+.social-link13:hover .instagram_icon-13,
+.social-link13:hover .whatsapp_icon-13 {
+    transform: scale(1.12);
+    filter: brightness(0.95);
+}
+
+
+
+.whatsapp_icon-13 {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .instagram_icon-13,
+    .whatsapp_icon-13 {
+        width: 20px;
+        height: 20px;
+    }
+
+    .whatsapp_icon-13 {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (min-width: 720px) {
+    .footer-container13 {
+        grid-template-columns: 360px 1fr;
+        gap: 40px;
+    }
+
+    .footer-links-grid13 {
+        grid-template-columns: repeat(4, minmax(0,1fr));
+    }
+
+    .footer-bottom13 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1080px) {
+    .footer13 {
+        padding: 64px 20px 32px;
+    }
+
+    .footer-desc13 {
+        font-size: 15px;
+    }
+}
+
+
+.footer-links-grid13 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 48px 1fr;
+    align-items: start;
+    gap: 0;
+    column-gap: 0;
+  }
+  
+  /* spacer column — invisible but keeps horizontal gap */
+  .footer-spacer13 {
+    width: 48px;
+    height: 1px;
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  /* ensure spacer doesn't break vertical rhythm on small screens */
+  @media (max-width: 900px) {
+    .footer-links-grid13 {
+      grid-template-columns: 1fr;
+      row-gap: 24px;
+    }
+  
+    .footer-spacer13 {
+      display: none;
+    }
+  }
+  

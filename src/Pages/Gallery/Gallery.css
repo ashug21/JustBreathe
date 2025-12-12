@@ -1,0 +1,73 @@
+
+.gallery-container-12{
+  background: #FFF5E9;
+}
+
+.galleryPage12 {
+    padding: 80px 20px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .galleryPage-title12 {
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #235656;
+    margin-bottom: 6px;
+  }
+  
+  .galleryPage-sub12 {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #235656cc;
+    margin-bottom: 40px;
+  }
+  
+  .galleryPage-grid12 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .galleryPage-item12 {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #ffffff20;
+    box-shadow: 0 10px 30px rgba(35,86,86,0.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  
+  .galleryPage-media12 {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    background: #000;
+  }
+  
+  .galleryPage-item12:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 20px 46px rgba(35,86,86,0.18);
+  }
+  
+  @media (max-width: 980px) {
+    .galleryPage-grid12 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .galleryPage-grid12 {
+      grid-template-columns: 1fr;
+    }
+    .galleryPage-media12 {
+      height: 200px;
+    }
+  }
+  
