@@ -9,8 +9,10 @@ const cors = require("cors");
 
 const PORT = 8000;
 const allowedOrigins = [
-    "http://localhost:5173",
-  ];
+  "http://localhost:5173",
+  "https://justbreathe-4.onrender.com"
+];
+
   
 
 app.use(express.json());
