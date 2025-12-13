@@ -55,29 +55,32 @@ const { connectDB } = require("./connect");
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-/* ----------- MIDDLEWARE ----------- */
+/* ---------- CORS (FINAL FIX) ---------- */
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+
+    if (
+      origin.includes("localhost") ||
+      origin.includes("amplifyapp.com")
+    ) {
+      return callback(null, true);
+    }
+
+    return callback(new Error("Not allowed by CORS"));
+  },
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
+
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions)); // 🔑 THIS FIXES 204 PREFLIGHT
+
+/* ---------- MIDDLEWARE ---------- */
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      if (!origin) return callback(null, true);
-
-      if (
-        origin.startsWith("http://localhost") ||
-        origin.endsWith(".amplifyapp.com")
-      ) {
-        return callback(null, true);
-      }
-
-      return callback(new Error("Not allowed by CORS"));
-    },
-    credentials: true,
-  })
-);
-
-/* ----------- ROUTES ----------- */
+/* ---------- ROUTES ---------- */
 app.use("/book", BookClassRoute);
 app.use("/api", EnquiryRoute);
 app.use("/news", NewsLetterRoute);
@@ -86,14 +89,14 @@ app.get("/", (req, res) => {
   res.json({ message: "Server is Up" });
 });
 
-/* ----------- DATABASE ----------- */
+/* ---------- DB ---------- */
 connectDB(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Atlas connected successfully"))
   .catch((err) =>
     console.error("MongoDB Connection Error:", err.message)
   );
 
-/* ----------- SERVER ----------- */
+/* ---------- SERVER ---------- */
 app.listen(PORT, () => {
   console.log("Server Started at PORT :", PORT);
 });
