@@ -96,3 +96,66 @@
   .gallery-masonry10 { grid-template-columns: 1fr; }
   .gallery-img10 { height: 190px; }
 }
+
+@media (max-width: 768px) {
+  .gallery10 {
+    padding: 56px 18px;
+  }
+
+  .gallery-title10 {
+    font-size: 26px;
+  }
+
+  .gallery-sub10 {
+    font-size: 14px;
+  }
+
+  .gallery-masonry10 {
+    gap: 16px;
+  }
+
+  .gallery-img10 {
+    height: 210px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery10 {
+    padding: 48px 16px;
+  }
+
+  .gallery-title10 {
+    font-size: 24px;
+  }
+
+  .gallery-sub10 {
+    font-size: 13.5px;
+  }
+
+  .gallery-masonry10 {
+    gap: 14px;
+  }
+
+  .gallery-img10 {
+    height: 185px;
+  }
+
+  .gallery-cta10 {
+    padding: 11px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .gallery-title10 {
+    font-size: 22px;
+  }
+
+  .gallery-sub10 {
+    font-size: 13px;
+  }
+
+  .gallery-img10 {
+    height: 170px;
+  }
+}

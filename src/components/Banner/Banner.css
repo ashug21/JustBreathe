@@ -114,15 +114,103 @@
   .hero-sub10 { font-size: 16px; }
 }
 
-@media (max-width: 480px) {
-  .hero-title10 { font-size: 30px; }
-  .hero-btns10 {
-    flex-direction: column;
-    width: 100%;
-    max-width: 260px;
+/* Tablet & small laptop */
+@media (max-width: 768px) {
+  .hero-title10 {
+    font-size: 44px;
   }
+
+  .hero-sub10 {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+  .hero-btns10 {
+    flex-direction: row;
+    gap: 16px;
+  }
+
   .hero-btn-primary10,
   .hero-btn-secondary10 {
-    width: 100%;
+    padding: 12px 24px;
+    font-size: 15px;
+    width: auto;
   }
 }
+
+/* Phones */
+@media (max-width: 480px) {
+  .hero-title10 {
+    font-size: 36px;
+  }
+
+  .hero-sub10 {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .hero-btns10 {
+    flex-direction: row;
+    gap: 14px;
+  }
+
+  .hero-btn-primary10,
+  .hero-btn-secondary10 {
+    padding: 11px 20px;
+    font-size: 14px;
+    width: auto;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+  .hero-title10 {
+    font-size: 30px;
+  }
+
+  .hero-sub10 {
+    font-size: 15px;
+  }
+
+  .hero-overlay10 {
+    padding: 0 14px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .hero-title10 {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .hero-sub10 {
+    font-size: 15px;
+    margin-bottom: 26px;
+  }
+
+  .hero-btn-primary10,
+  .hero-btn-secondary10 {
+    padding: 12px 22px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title10 {
+    font-size: 26px;
+  }
+
+  .hero-sub10 {
+    font-size: 14px;
+  }
+
+  .hero-overlay10 {
+    padding: 0 14px;
+  }
+
+  .hero-btns10 {
+    gap: 14px;
+  }
+}
+

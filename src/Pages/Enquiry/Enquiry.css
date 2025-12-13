@@ -231,3 +231,102 @@
     height: 260px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .enquiry-hero8 {
+    padding: 44px 26px;
+    gap: 32px;
+  }
+
+  .enquiry-heading8 {
+    font-size: 32px;
+  }
+
+  .enquiry-text8 {
+    font-size: 15px;
+  }
+
+  .enquiry-image8 {
+    height: 380px;
+  }
+
+  .social-heading8 {
+    font-size: 20px;
+  }
+
+  .social-card8 {
+    width: 140px;
+    font-size: 14.5px;
+  }
+
+  .map-heading8 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .enquiry-hero8 {
+    padding: 36px 18px;
+    gap: 28px;
+  }
+
+  .enquiry-heading8 {
+    font-size: 28px;
+  }
+
+  .enquiry-text8 {
+    font-size: 14.5px;
+  }
+
+  .enquiry-button8 {
+    width: 140px;
+    font-size: 14px;
+    padding: 11px;
+  }
+
+  .enquiry-image8 {
+    height: 340px;
+    border-radius: 18px;
+  }
+
+  .social-card8 {
+    width: 135px;
+    padding: 16px 14px;
+  }
+
+  .contact-heading8 {
+    font-size: 18px;
+  }
+
+  .contact-number8 {
+    font-size: 17px;
+  }
+
+  .before-map-8 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .enquiry-heading8 {
+    font-size: 26px;
+  }
+
+  .enquiry-text8 {
+    font-size: 14px;
+  }
+
+  .social-card8 {
+    width: 130px;
+    font-size: 14px;
+  }
+
+  .map-frame8 {
+    height: 240px;
+  }
+
+  .before-map-8 {
+    font-size: 22px;
+  }
+}

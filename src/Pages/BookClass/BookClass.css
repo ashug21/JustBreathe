@@ -256,3 +256,92 @@ select.input7:not([value=""]) + .label7 {
         flex-direction: column;
     }
 }
+
+
+@media (max-width: 768px) {
+    .book-hero7 {
+        padding: 0 20px;
+        gap: 24px;
+    }
+
+    .visual-overlay7 {
+        padding: 36px;
+        gap: 16px;
+    }
+
+    .visual-title7 {
+        font-size: 26px;
+    }
+
+    .visual-sub7 {
+        font-size: 15px;
+    }
+
+    .card-heading7 {
+        font-size: 20px;
+    }
+
+    .card-lead7 {
+        font-size: 13.5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-hero7 {
+        margin: 24px auto;
+        padding: 0 16px;
+    }
+
+    .visual-overlay7 {
+        padding: 28px;
+    }
+
+    .visual-title7 {
+        font-size: 24px;
+    }
+
+    .visual-sub7 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .card-inner7 {
+        padding: 20px;
+    }
+
+    .input7 {
+        font-size: 14px;
+        padding: 15px 13px 13px 13px;
+    }
+
+    .label7 {
+        font-size: 14px;
+    }
+
+    .submit7 {
+        font-size: 15px;
+        padding: 13px 14px;
+    }
+
+    .foot-note7 {
+        font-size: 12.5px;
+    }
+}
+
+@media (max-width: 360px) {
+    .visual-title7 {
+        font-size: 22px;
+    }
+
+    .visual-sub7 {
+        font-size: 13.5px;
+    }
+
+    .card-heading7 {
+        font-size: 18.5px;
+    }
+
+    .submit7 {
+        font-size: 14px;
+    }
+}

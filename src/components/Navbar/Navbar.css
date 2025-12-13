@@ -59,3 +59,49 @@
 .nav-item1:hover::after {
     width: 100%;
 }
+
+
+@media (max-width: 1024px) {
+    .navbar1 {
+        padding: 18px 40px;
+    }
+
+    .nav-links1 {
+        gap: 32px;
+        font-size: 16px;
+    }
+
+    .nav-logo1 {
+        width: 65px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar1 {
+        padding: 16px 24px;
+    }
+
+    .nav-links1 {
+        gap: 24px;
+        font-size: 15px;
+    }
+
+    .nav-logo1 {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar1 {
+        padding: 14px 18px;
+    }
+
+    .nav-links1 {
+        gap: 16px;
+        font-size: 14px;
+    }
+
+    .nav-logo1 {
+        width: 52px;
+    }
+}

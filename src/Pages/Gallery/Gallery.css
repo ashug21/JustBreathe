@@ -70,4 +70,65 @@
       height: 200px;
     }
   }
+
+  @media (max-width: 768px) {
+    .galleryPage12 {
+      padding: 64px 18px;
+    }
+  
+    .galleryPage-title12 {
+      font-size: 28px;
+    }
+  
+    .galleryPage-sub12 {
+      font-size: 15px;
+      margin-bottom: 32px;
+    }
+  
+    .galleryPage-grid12 {
+      gap: 16px;
+    }
+  
+    .galleryPage-media12 {
+      height: 230px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .galleryPage12 {
+      padding: 56px 16px;
+    }
+  
+    .galleryPage-title12 {
+      font-size: 26px;
+    }
+  
+    .galleryPage-sub12 {
+      font-size: 14.5px;
+      margin-bottom: 28px;
+    }
+  
+    .galleryPage-grid12 {
+      gap: 14px;
+    }
+  
+    .galleryPage-media12 {
+      height: 210px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .galleryPage-title12 {
+      font-size: 24px;
+    }
+  
+    .galleryPage-sub12 {
+      font-size: 14px;
+    }
+  
+    .galleryPage-media12 {
+      height: 190px;
+    }
+  }
+  
   

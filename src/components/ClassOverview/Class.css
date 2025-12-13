@@ -124,3 +124,70 @@
         height: 210px;
     }
 }
+
+
+/* Tablets / small laptops */
+@media (max-width: 900px) {
+    .classes-section4 {
+        padding: 70px 18px;
+    }
+
+    .classes-container4 {
+        gap: 42px;
+    }
+
+    .classes-title4 {
+        font-size: 32px;
+    }
+
+    .class-name4 {
+        font-size: 20px;
+    }
+
+    .class-text4 {
+        font-size: 14.5px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .classes-section4 {
+        padding: 60px 16px;
+    }
+
+    .classes-container4 {
+        gap: 36px;
+    }
+
+    .classes-title4 {
+        font-size: 28px;
+    }
+
+    .class-name4 {
+        font-size: 19px;
+    }
+
+    .class-text4 {
+        font-size: 14px;
+        padding: 0 18px 24px;
+    }
+
+    .class-image4 {
+        height: 200px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .classes-title4 {
+        font-size: 26px;
+    }
+
+    .class-name4 {
+        font-size: 18px;
+    }
+
+    .class-text4 {
+        font-size: 13.5px;
+    }
+}
