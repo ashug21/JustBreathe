@@ -17,7 +17,7 @@ const BookClass = () => {
 
         try {
 
-            const response = await axios.post("http://localhost:8000/book/class",{
+          const response = await axios.post("https://justbreathe-4.onrender.com/book/class",{
                 name,
                 phone,
                 date,

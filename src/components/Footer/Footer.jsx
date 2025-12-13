@@ -15,7 +15,7 @@ export default function Footer() {
 
     try {
 
-      const response = await axios.post("http://localhost:8000/news/subscribe",{
+      const response = await axios.post("https://justbreathe-4.onrender.com/news/subscribe",{
         email,
     });
 

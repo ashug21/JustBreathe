@@ -19,7 +19,7 @@ const [message , setMessage] = useState("");
     e.preventDefault();
     try {
 
-      const response = await axios.post("http://localhost:8000/api/enquiry",{
+      const response = await axios.post("https://justbreathe-4.onrender.com/api/enquiry",{
         fullname,
         email,
         phone,
