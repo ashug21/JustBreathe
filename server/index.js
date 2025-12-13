@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const BookClassRoute = require('./routes/BookClass');
 const EnquiryRoute = require('./routes/Enquiry');
+const NewsLetterRoute = require('./routes/NewsLetter');
 const {connectDB} = require('./connect');
 const cors = require("cors");
 
@@ -21,6 +22,7 @@ app.use(cors({
 
 app.use('/book' , BookClassRoute);
 app.use('/api' , EnquiryRoute);
+app.use('/news' , NewsLetterRoute);
 
 connectDB(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Atlas connected successfully"))

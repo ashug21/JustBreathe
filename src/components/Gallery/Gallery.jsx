@@ -18,7 +18,7 @@ const Gallery = () => {
       <div className="gallery-wrapper10">
         <div className="gallery-header10">
           <h2 className="gallery-title10">JustBreathe Studios Images</h2>
-          <p className="gallery-sub10">A calm collection of moments — add your images below.</p>
+          <p className="gallery-sub10">A calm collection of moments</p>
         </div>
 
         <div className="gallery-masonry10">

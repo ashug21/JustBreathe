@@ -8,6 +8,7 @@ import Enquiry2 from './Pages/Enquiry/Enquiry2'
 import Gallery from './Pages/Gallery/Gallery'
 import ScrollToTop from './components/ScrollToTop'
 import Footer from './components/Footer/Footer'
+import Timings from './Pages/Timings/Timings'
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <ScrollToTop/>
      <Routes>
       <Route path='/' element={<Home/>}></Route>
-      <Route path='/about' element={<Home/>}></Route>
+      <Route path='/timings' element={<Timings/>}></Route>
       <Route path='/book-class' element={<BookClass/>}></Route>
       <Route path='/gallery' element={<Gallery/>}></Route>
       <Route path='/enquiry' element={<Enquiry/>}></Route>

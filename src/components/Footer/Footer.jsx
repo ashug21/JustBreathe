@@ -1,11 +1,35 @@
 import Logo from "../../assets/Logo.png";
-import React from "react";
+import React,{useState , useEffect} from "react";
 import "./Footer.css";
 import whatsapp_icon from "../../assets/whatsapp.png";
 import instagram_icon from "../../assets/instagram.png";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function Footer() {
+
+  const [email , setEmail] = useState("");
+
+  const handleSubscribe = async(e) => {
+    e.preventDefault();
+
+    try {
+
+      const response = await axios.post("http://localhost:8000/news/subscribe",{
+        email,
+    });
+
+    if (!response.data.success) {
+        alert(response.data.message || "Something went wrong");
+        return;
+      }
+      setEmail("");
+    } catch (error) {
+      console.error(error);
+    }
+
+  }
+
   return (
     <footer className="footer13" role="contentinfo" aria-label="Site footer">
       <div className="footer-container13">
@@ -48,22 +72,22 @@ export default function Footer() {
             <h4 className="footer-title13">Quick Links</h4>
             <ul className="footer-list13">
               <li>
-                <a href="#">About</a>
+                <Link to="/timings">Timings</Link>
               </li>
               <li>
-                <a href="#">Programs</a>
+                <Link to="/book-class">Book A Class</Link>
               </li>
               <li>
-                <a href="#">Trainers</a>
+                <Link to="/gallery">Gallery</Link>
               </li>
               <li>
-                <a href="#">Schedule</a>
+                <Link to="/enquiry">Enquiry</Link>
               </li>
-              <div className="footer-hours13">
+              {/* <div className="footer-hours13">
               <strong>Hours</strong>
-              <div>Mon–Fri: 6:00–21:00</div>
-              <div>Sat–Sun: 7:00–16:00</div>
-            </div>
+              <div>Mon–Fri: 7:30am – 8:00pm</div>
+              <div>Sat–Sun: Closed</div>
+            </div> */}
             </ul>
           </nav>
 
@@ -114,12 +138,12 @@ export default function Footer() {
           <div className="footer-col13" aria-label="Newsletter signup">
             <h4 className="footer-title13">Join our Newsletter</h4>
             <p className="footer-note13">
-              Weekly tips, new classes and member offers.
+              Weekly tips, new classes and membership offers.
             </p>
             <form
               className="newsletter-form13"
               action="#"
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={handleSubscribe}
             >
               <label htmlFor="email13" className="visually-hidden13">
                 Email
@@ -129,6 +153,8 @@ export default function Footer() {
                 type="email"
                 placeholder="you@domain.com"
                 className="newsletter-input13"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
               />
               <button className="newsletter-btn13" type="submit">
                 Subscribe
