@@ -15,7 +15,7 @@
 }
 
 .nav-logo1 {
-    width: 75px;
+    width: 92px;
     height: auto;
     object-fit: contain;
 }
@@ -60,7 +60,6 @@
     width: 100%;
 }
 
-
 @media (max-width: 1024px) {
     .navbar1 {
         padding: 18px 40px;
@@ -72,7 +71,7 @@
     }
 
     .nav-logo1 {
-        width: 65px;
+        width: 82px;
     }
 }
 
@@ -87,7 +86,7 @@
     }
 
     .nav-logo1 {
-        width: 60px;
+        width: 72px;
     }
 }
 
@@ -102,6 +101,6 @@
     }
 
     .nav-logo1 {
-        width: 52px;
+        width: 64px;
     }
 }

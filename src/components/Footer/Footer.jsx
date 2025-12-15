@@ -5,6 +5,7 @@ import whatsapp_icon from "../../assets/whatsapp.png";
 import instagram_icon from "../../assets/instagram.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Logo2 from '../../assets/nobglogo.png'
 
 export default function Footer() {
 
@@ -35,7 +36,7 @@ export default function Footer() {
       <div className="footer-container13">
         <div className="footer-brand13">
           <img
-            src={Logo}
+            src={Logo2}
             alt="Studio logo"
             className="footer-logo13"
             width="140"
