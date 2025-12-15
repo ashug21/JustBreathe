@@ -1,50 +1,50 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./BookClass.css";
-import axios from 'axios'
+import axios from "axios";
 import Footer from "../../components/Footer/Footer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const BookClass = () => {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [date, setDate] = useState("");
+  const [timings, setTimings] = useState("");
+  const [center, setCenter] = useState("");
 
-    const [name , setName] = useState("");
-    const [phone , setPhone] = useState("");
-    const [date , setDate] = useState("");
-    const [timings , setTimings] = useState("");
-    const [center , setCenter] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    const handleSubmit = async(e) => {
-        e.preventDefault();
+    try {
+      const response = await axios.post(
+        "https://justbreathe-4.onrender.com/book/class",
+        { name, phone, date, timings, center }
+      );
 
-        try {
+      if (!response.data.success) {
+        toast.error(response.data.message || "Something went wrong");
+        return;
+      }
 
-          const response = await axios.post("https://justbreathe-4.onrender.com/book/class",{
-                name,
-                phone,
-                date,
-                timings,
-                center
-            });
+      toast.success("Booking successful. We will contact you soon.");
 
-            if (!response.data.success) {
-                alert(response.data.message || "Something went wrong");
-                return;
-              }
-
-            setName("");
-            setPhone("");
-            setDate("");
-            setTimings("");
-            setCenter("");
-            
-        } catch (error) {
-            console.error(error);
-        }
-    }   
+      setName("");
+      setPhone("");
+      setDate("");
+      setTimings("");
+      setCenter("");
+    } catch (error) {
+      toast.error("Server error. Please try again.");
+      console.error(error);
+    }
+  };
 
   return (
     <div className="book-page7">
       <Navbar />
-      <br/>  <br/>  <br/>  <br/>
+      <br /><br /><br /><br />
+
       <main className="book-hero7">
         <section
           className="book-visual7"
@@ -61,23 +61,6 @@ const BookClass = () => {
                 Reserve your spot at <strong>Rani Bagh</strong> or{" "}
                 <strong>Pitampura</strong> — space is limited.
               </p>
-              <div className="visual-ornament7">
-                <svg
-                  width="90"
-                  height="90"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M12 2C9 6 5 7 4 11c1 4 5 7 8 9 3-2 7-5 8-9-1-4-5-5-8-9z"
-                    stroke="#235656"
-                    strokeWidth="0.8"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
             </div>
           </div>
         </section>
@@ -92,57 +75,44 @@ const BookClass = () => {
             <form className="form7" noValidate onSubmit={handleSubmit}>
               <div className="field7">
                 <input
-                  id="name7"
-                  name="name"
                   type="text"
                   className="input7"
                   placeholder=" "
-                  onChange={(e) => setName(e.target.value)}
                   value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
-                <label htmlFor="name7" className="label7">
-                  Full name
-                </label>
+                <label className="label7">Full name</label>
               </div>
 
               <div className="field7">
                 <input
-                  id="phone7"
-                  name="phone"
                   type="text"
                   className="input7"
                   placeholder=" "
-                  onChange={(e) => setPhone(e.target.value)}
                   value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
-                <label htmlFor="phone7" className="label7">
-                  Phone number
-                </label>
+                <label className="label7">Phone number</label>
               </div>
 
               <div className="row7">
                 <div className="field-row7">
                   <input
-                    id="date7"
-                    name="date"
                     type="date"
                     className="input7 input-date7"
-                    placeholder=" "
-                    onChange={(e) => setDate(e.target.value)}
                     value={date}
+                    onChange={(e) => setDate(e.target.value)}
                   />
-                  <label htmlFor="date7" className="label7 label-date7">
+                  <label className="label7 label-date7">
                     Preferred date
                   </label>
                 </div>
 
                 <div className="field-row7">
                   <select
-                    id="timings7"
-                    name="timings"
                     className="input7 select7"
-                    onChange={(e) => setTimings(e.target.value)}
                     value={timings}
+                    onChange={(e) => setTimings(e.target.value)}
                   >
                     <option value="">Select timing</option>
                     <option>6:00 AM - 7:00 AM</option>
@@ -150,22 +120,21 @@ const BookClass = () => {
                     <option>8:00 AM - 9:00 AM</option>
                     <option>6:00 PM - 7:00 PM</option>
                   </select>
-                  <label htmlFor="timings7" className="label7">
-                    Timing
-                  </label>
+                  <label className="label7">Timing</label>
                 </div>
               </div>
 
               <div className="field7">
-                <select id="center7" name="center" className="input7 select7"  onChange={(e) => setCenter(e.target.value)}
-                  value={center}>
+                <select
+                  className="input7 select7"
+                  value={center}
+                  onChange={(e) => setCenter(e.target.value)}
+                >
                   <option value="">Select center</option>
                   <option>Multani mohlla, Rani bagh</option>
                   <option>Rajdhani enclave, Pitampura</option>
                 </select>
-                <label htmlFor="center7" className="label7">
-                  Center
-                </label>
+                <label className="label7">Center</label>
               </div>
 
               <button type="submit" className="submit7">
@@ -182,11 +151,16 @@ const BookClass = () => {
         </section>
       </main>
 
-        <br/>  <br/>  <br/>  <br/> 
-        <br/>  <br/>  <br/>  <br/>
-        <br/>  <br/>  <br/>  <br/>
-        <br/>  <br/>  <br/>  <br/>
-            <Footer/>
+      <Footer />
+
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+      />
     </div>
   );
 };
