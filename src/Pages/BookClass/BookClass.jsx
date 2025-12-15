@@ -125,7 +125,7 @@ const BookClass = () => {
                   <input
                     id="date7"
                     name="date"
-                    type="text"
+                    type="date"
                     className="input7 input-date7"
                     placeholder=" "
                     onChange={(e) => setDate(e.target.value)}
@@ -160,8 +160,8 @@ const BookClass = () => {
                 <select id="center7" name="center" className="input7 select7"  onChange={(e) => setCenter(e.target.value)}
                   value={center}>
                   <option value="">Select center</option>
-                  <option>Rani Bagh</option>
-                  <option>Pitampura</option>
+                  <option>Multani mohlla, Rani bagh</option>
+                  <option>Rajdhani enclave, Pitampura</option>
                 </select>
                 <label htmlFor="center7" className="label7">
                   Center
