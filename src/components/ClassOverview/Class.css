@@ -125,8 +125,6 @@
     }
 }
 
-
-/* Tablets / small laptops */
 @media (max-width: 900px) {
     .classes-section4 {
         padding: 70px 18px;
@@ -149,7 +147,6 @@
     }
 }
 
-/* Phones */
 @media (max-width: 480px) {
     .classes-section4 {
         padding: 60px 16px;
@@ -177,7 +174,6 @@
     }
 }
 
-/* Very small phones */
 @media (max-width: 360px) {
     .classes-title4 {
         font-size: 26px;
