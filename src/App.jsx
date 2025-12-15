@@ -10,6 +10,8 @@ import ScrollToTop from './components/ScrollToTop'
 import Footer from './components/Footer/Footer'
 import Timings from './Pages/Timings/Timings'
 import ScrollToHash from './components/ScrollToHash'
+import Terms from './components/Terms/Terms'
+import Privacy from './components/Privacy/Privacy'
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
       <Route path='/book-class' element={<BookClass/>}></Route>
       <Route path='/gallery' element={<Gallery/>}></Route>
       <Route path='/enquiry' element={<Enquiry/>}></Route>
+      <Route path='/termsandconditions' element={<Terms/>}></Route>
+      <Route path='/privacy' element={<Privacy/>}></Route>
      </Routes>
    
     </div>

@@ -6,6 +6,8 @@ import instagram_icon from "../../assets/instagram.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Logo2 from '../../assets/nobglogo.png'
+import Terms from "../Terms/Terms";
+import Privacy from "../Privacy/Privacy";
 
 export default function Footer() {
 
@@ -173,12 +175,12 @@ export default function Footer() {
           © {new Date().getFullYear()} JustBreathe Studios. All rights reserved.
 
           </small>
-          <a href="#" className="legal-link13">
+          <Link to="/privacy" className="legal-link13">
             Privacy
-          </a>
-          <a href="#" className="legal-link13">
+          </Link>
+          <Link to="/termsandconditions" className="legal-link13">
             Terms
-          </a>
+          </Link>
         </div>
        
       </div>

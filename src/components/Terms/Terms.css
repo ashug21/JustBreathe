@@ -1,0 +1,39 @@
+.legal-page22 {
+    background: #F3F4F6;
+    padding: 90px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .legal-container22 {
+    max-width: 900px;
+    width: 100%;
+  }
+  
+  .legal-title22 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 8px;
+  }
+  
+  .legal-updated22 {
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 32px;
+  }
+  
+  .legal-heading22 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1F2937;
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .legal-text22 {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #374151;
+  }
+  
