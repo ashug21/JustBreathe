@@ -106,6 +106,7 @@ const [message , setMessage] = useState("");
         </div>
       </section>
 
+      <section id="map-section">
       <h1 className="before-map-8">Find Us At</h1>
       <section className="enquiry-map-wrap8">
         {/* Rani Bagh Branch */}
@@ -131,6 +132,7 @@ const [message , setMessage] = useState("");
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+      </section>
       </section>
 
       <section className="enquiry-social-panel8">

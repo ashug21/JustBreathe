@@ -9,11 +9,13 @@ import Gallery from './Pages/Gallery/Gallery'
 import ScrollToTop from './components/ScrollToTop'
 import Footer from './components/Footer/Footer'
 import Timings from './Pages/Timings/Timings'
+import ScrollToHash from './components/ScrollToHash'
 
 const App = () => {
   return (
     <div>
       <ScrollToTop/>
+      <ScrollToHash/>
      <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/timings' element={<Timings/>}></Route>

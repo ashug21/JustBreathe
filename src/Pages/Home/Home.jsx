@@ -7,6 +7,7 @@ import About from '../../components/About/About'
 import Testimonials from '../../components/Testimonals/Testimonals'
 import Gallery from '../../components/Gallery/Gallery'
 import Footer from '../../components/Footer/Footer'
+import Location from '../../components/Location/Location'
 
 const Home = () => {
   
@@ -24,6 +25,7 @@ const Home = () => {
       <Gallery/>
       <Testimonials/>
     <br/><br/>
+      <Location/>
       <Footer/>
     </div>
   )

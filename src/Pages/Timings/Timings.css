@@ -1,0 +1,179 @@
+.timings-section20 {
+    background: linear-gradient(180deg, #FFF5E9 0%, #F3EFE7 100%);
+    padding: 64px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .timings-container20 {
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .timings-header20 {
+    text-align: center;
+    margin-bottom: 36px;
+    position: relative;
+  }
+  
+  .timings-sub20 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #235656;
+    letter-spacing: 0.6px;
+  }
+  
+  .timings-header20::after {
+    content: "";
+    width: 56px;
+    height: 3px;
+    background: #A8D5BA;
+    display: block;
+    margin: 18px auto 0;
+    border-radius: 2px;
+  }
+  
+  .timings-grid20 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  
+  .timing-card20 {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 26px 24px;
+    box-shadow:
+      0 10px 24px rgba(35, 86, 86, 0.06),
+      0 32px 64px rgba(35, 86, 86, 0.05);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .timing-card20::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at top left,
+      rgba(168, 213, 186, 0.22),
+      transparent 55%
+    );
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+  
+  .timing-card20:hover::before {
+    opacity: 1;
+  }
+  
+  .timing-card20:hover {
+    transform: translateY(-6px);
+    box-shadow:
+      0 18px 36px rgba(35, 86, 86, 0.12),
+      0 48px 90px rgba(35, 86, 86, 0.14);
+  }
+  
+  .timing-card20.highlight20 {
+    background: linear-gradient(145deg, #A8D5BA, #F4FBF8);
+  }
+  
+  .timing-day20 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #235656;
+    margin-bottom: 16px;
+  }
+  
+  .timing-list20 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .timing-list20 li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: #235656;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(35, 86, 86, 0.12);
+  }
+  
+  .timing-list20 li:last-child {
+    border-bottom: none;
+  }
+  
+  .timing-list20 li span:last-child {
+    color: rgba(35, 86, 86, 0.7);
+    font-weight: 500;
+  }
+  
+  .timings-section20 + .timings-section20 {
+    border-top: 1px solid rgba(35, 86, 86, 0.12);
+    padding-top: 48px;
+  }
+  
+  .timings-cta20 {
+    background: linear-gradient(180deg, #F3EFE7 0%, #EEF5F3 100%);
+    padding: 64px 20px 88px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .timings-cta-container20 {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .timings-cta-title20 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #235656;
+    margin-bottom: 24px;
+  }
+  
+  .timings-cta-buttons20 {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+  
+  .timings-btn20 {
+    padding: 14px 28px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #235656;
+    border: 2px solid #235656;
+    background: transparent;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  }
+  
+  .timings-btn20:hover {
+    background: #235656;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 40px rgba(35, 86, 86, 0.25);
+  }
+  
+  .timings-btn20.primary20 {
+    background: #235656;
+    color: #ffffff;
+  }
+  
+  .timings-btn20.primary20:hover {
+    background: #1a4444;
+  }
+  
+  .gap-section-20 {
+    height: 72px;
+    width: 100%;
+    background: #EEF5F3;
+  }
+  

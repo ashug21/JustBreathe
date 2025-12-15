@@ -2,7 +2,8 @@ import React from "react";
 import "./Class.css";
 import aeriel from '../../assets/Banner.png';
 import zumba from '../../assets/zumba.png';
-import power from '../../assets/power2.png'
+import power2 from '../../assets/power2.png'
+import power from '../../assets/power.png'
 import cardio from '../../assets/cardio.png'
 
 export default function Class() {
