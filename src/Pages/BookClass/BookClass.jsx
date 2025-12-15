@@ -166,7 +166,7 @@ const BookClass = () => {
       <Toaster
         position="top-right"
         toastOptions={{
-          duration: 3000,
+          duration: 3800,
           style: {
             background: "#235656",
             color: "#FFF5E9",
