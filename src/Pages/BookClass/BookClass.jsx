@@ -3,8 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./BookClass.css";
 import axios from "axios";
 import Footer from "../../components/Footer/Footer";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import toast, { Toaster } from "react-hot-toast";
 
 const BookClass = () => {
   const [name, setName] = useState("");
@@ -12,9 +11,13 @@ const BookClass = () => {
   const [date, setDate] = useState("");
   const [timings, setTimings] = useState("");
   const [center, setCenter] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (loading) return;
+
+    setLoading(true);
 
     try {
       const response = await axios.post(
@@ -37,6 +40,8 @@ const BookClass = () => {
     } catch (error) {
       toast.error("Server error. Please try again.");
       console.error(error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -137,8 +142,13 @@ const BookClass = () => {
                 <label className="label7">Center</label>
               </div>
 
-              <button type="submit" className="submit7">
-                Request Booking
+              <button
+                type="submit"
+                className="submit7"
+                disabled={loading}
+                style={{ opacity: loading ? 0.7 : 1 }}
+              >
+                {loading ? "Booking..." : "Request Booking"}
               </button>
 
               <div className="card-foot7">
@@ -153,13 +163,17 @@ const BookClass = () => {
 
       <Footer />
 
-      <ToastContainer
+      <Toaster
         position="top-right"
-        autoClose={3000}
-        hideProgressBar
-        newestOnTop
-        closeOnClick
-        pauseOnHover
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: "#235656",
+            color: "#FFF5E9",
+            borderRadius: "10px",
+            fontSize: "14px",
+          },
+        }}
       />
     </div>
   );
