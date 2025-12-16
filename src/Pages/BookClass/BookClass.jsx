@@ -160,7 +160,8 @@ const BookClass = () => {
           </div>
         </section>
       </main>
-
+      <br/>  <br/>  <br/><br/>  <br/>  <br/>
+      <br/>  <br/>  <br/><br/>  <br/>  <br/>
       <Footer />
 
       <Toaster
