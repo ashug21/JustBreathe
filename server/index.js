@@ -50,6 +50,7 @@ const cors = require("cors");
 const BookClassRoute = require("./routes/BookClass");
 const EnquiryRoute = require("./routes/Enquiry");
 const NewsLetterRoute = require("./routes/NewsLetter");
+const AdminRoute = require("./routes/Admin");
 const { connectDB } = require("./connect");
 
 const app = express();
@@ -84,6 +85,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/book", BookClassRoute);
 app.use("/api", EnquiryRoute);
 app.use("/news", NewsLetterRoute);
+app.use("/admin", AdminRoute);
 
 app.get("/", (req, res) => {
   res.json({ message: "Server is Up" });

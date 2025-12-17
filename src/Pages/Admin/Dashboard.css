@@ -1,0 +1,159 @@
+.dashboard40 {
+    min-height: 100vh;
+    padding: 60px 70px;
+    background: linear-gradient(180deg, #0a0e14, #05070b);
+    color: #e5e7eb;
+    font-family: Inter, system-ui, sans-serif;
+  }
+  
+  .dashboard-title40 {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 46px;
+    letter-spacing: 0.6px;
+    margin-left: 420px;
+  }
+  
+  .dashboard-grid40 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+  }
+  
+  .dashboard-section40 {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .dashboard-section-title40 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #93c5fd;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dashboard-section-title40 span {
+    color: #9ca3af;
+    font-weight: 500;
+  }
+  
+  .dashboard-list40 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .dashboard-card40 {
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow:
+      0 20px 50px rgba(0, 0, 0, 0.7),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  }
+  
+  .dashboard-card-header40 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  
+  .dashboard-name40 {
+    font-weight: 600;
+    font-size: 15px;
+    color: #e5e7eb;
+  }
+  
+  .dashboard-card-body40 {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: #d1d5db;
+  }
+  
+  .dashboard-card-body40 strong {
+    color: #93c5fd;
+    font-weight: 500;
+  }
+  
+  .dashboard-message40 {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e5e7eb;
+    background: rgba(2, 6, 23, 0.8);
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+  
+  .dashboard-date40 {
+    font-size: 13px;
+    color: #9ca3af;
+    letter-spacing: 0.3px;
+  }
+  
+  /* ONLY Class Bookings → bottom-right date */
+  .dashboard-section40:first-of-type .dashboard-card40 {
+    position: relative;
+    padding-bottom: 36px;
+  }
+  
+  .dashboard-section40:first-of-type .dashboard-date40 {
+    position: absolute;
+    bottom: 12px;
+    right: 16px;
+    font-size: 12px;
+    color: #9ca3af;
+  }
+  
+  .compact40 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dashboard-email40 {
+    font-size: 14px;
+    color: #e5e7eb;
+  }
+  
+  @media (max-width: 1200px) {
+    .dashboard-grid40 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+
+
+  .dashboard-card40 {
+    position: relative;
+  }
+  
+  .dashboard-bin40 {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .dashboard-bin40:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  .dashboard-card-header40 {
+    padding-right: 26px;
+  }
+
+  .dashboard-card40.compact40 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  

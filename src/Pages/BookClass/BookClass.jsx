@@ -20,10 +20,7 @@ const BookClass = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post(
-        "https://justbreathe-4.onrender.com/book/class",
-        { name, phone, date, timings, center }
-      );
+      const response = await axios.post("https://justbreathe-4.onrender.com/book/class",{ name, phone, date, timings, center });
 
       if (!response.data.success) {
         toast.error(response.data.message || "Something went wrong");

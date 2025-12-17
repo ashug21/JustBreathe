@@ -89,6 +89,9 @@ export default function Footer() {
               <li>
                 <Link to="/enquiry">Enquiry</Link>
               </li>
+              <li>
+                <Link to="/admin">Admin</Link>
+              </li>
               {/* <div className="footer-hours13">
               <strong>Hours</strong>
               <div>Mon–Fri: 7:30am – 8:00pm</div>
