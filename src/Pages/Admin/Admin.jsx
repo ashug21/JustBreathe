@@ -16,7 +16,7 @@ const Admin = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/admin/login",
+        "https://justbreathe-4.onrender.com/admin/login",
         { username, password }
       );
 
@@ -27,7 +27,7 @@ const Admin = () => {
 
       toast.success("Admin login successful");
 
-      localStorage.setItem("isAdmin", "true");   // ✅ STEP 1 — ADDED HERE
+      localStorage.setItem("isAdmin", "true");
 
       navigate("/admin/dashboard");
     } catch (error) {

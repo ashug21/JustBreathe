@@ -12,7 +12,7 @@ const Dashboard = () => {
 
   const getClassBookingsData = async() => {
     try {
-      const res = await axios.get("http://localhost:8000/admin/bookings")
+      const res = await axios.get("https://justbreathe-4.onrender.com/admin/bookings")
       setClassBookings(res.data.data || [])
     } catch (error) {
       console.log(error)
@@ -21,7 +21,7 @@ const Dashboard = () => {
 
   const getEnquiryData = async() => {
     try {
-      const res = await axios.get("http://localhost:8000/admin/enquiries")
+      const res = await axios.get("https://justbreathe-4.onrender.com/admin/enquiries")
       setEnquiry(res.data.data || [])
     } catch (error) {
       console.log(error)
@@ -30,7 +30,7 @@ const Dashboard = () => {
 
   const getNewsLetterData = async() => {
     try {
-      const res = await axios.get("http://localhost:8000/admin/newsletters")
+      const res = await axios.get("https://justbreathe-4.onrender.com/admin/newsletters")
       setNewsLetter(res.data.data || [])
     } catch (error) {
       console.log(error)
@@ -39,7 +39,7 @@ const Dashboard = () => {
 
   const deleteBookingsData = async(id) => {
     try {
-      await axios.delete(`http://localhost:8000/admin/delete-bookings/${id}`)
+      await axios.delete(`https://justbreathe-4.onrender.com/admin/delete-bookings/${id}`)
       getClassBookingsData();
     } catch (error) {
       console.error("Delete error:", error);
@@ -48,7 +48,7 @@ const Dashboard = () => {
 
   const deleteEnquiryData = async(id) => {
     try {
-      await axios.delete(`http://localhost:8000/admin/delete-enquiry/${id}`)
+      await axios.delete(`https://justbreathe-4.onrender.com/admin/delete-enquiry/${id}`)
       getEnquiryData();
     } catch (error) {
       console.error("Delete error:", error);
@@ -57,7 +57,7 @@ const Dashboard = () => {
 
   const deleteNewsletterData = async(id) => {
     try {
-      await axios.delete(`http://localhost:8000/admin/delete-newsletter/${id}`)
+      await axios.delete(`https://justbreathe-4.onrender.com/admin/delete-newsletter/${id}`)
       getNewsLetterData();
     } catch (error) {
       console.error("Delete error:", error);
