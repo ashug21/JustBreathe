@@ -18,7 +18,7 @@ import AdminProtectedRoute from "./Pages/Admin/AdminProtectedRoute";
 
 const App = () => {
   useEffect(() => {
-    fetch("https://your-backend.onrender.com/admin/health")
+    fetch("https://justbreathe-4.onrender.com/admin/health")
       .catch(() => {});
   }, []);
   
