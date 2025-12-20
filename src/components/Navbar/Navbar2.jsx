@@ -20,7 +20,7 @@ const Navbar2 = () => {
       </div>
 
       <ul className="nav-links1">
-        <Link to="/" className="nav-item1">Home</Link>
+
         <span className="nav-item1" onClick={logoutAdmin}>Logout</span>
       </ul>
     </nav>

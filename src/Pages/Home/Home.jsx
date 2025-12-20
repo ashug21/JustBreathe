@@ -8,6 +8,7 @@ import Testimonials from '../../components/Testimonals/Testimonals'
 import Gallery from '../../components/Gallery/Gallery'
 import Footer from '../../components/Footer/Footer'
 import Location from '../../components/Location/Location'
+import Navbar2 from '../../components/Navbar/Navbar2'
 
 const Home = () => {
   

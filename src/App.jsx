@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Navbar from "./components/Navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
@@ -17,6 +17,11 @@ import Dashboard from "./Pages/Admin/Dashboard";
 import AdminProtectedRoute from "./Pages/Admin/AdminProtectedRoute";
 
 const App = () => {
+  useEffect(() => {
+    fetch("https://your-backend.onrender.com/admin/health")
+      .catch(() => {});
+  }, []);
+  
   return (
     <div>
       <ScrollToTop />
