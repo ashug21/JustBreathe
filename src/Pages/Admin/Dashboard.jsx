@@ -96,13 +96,16 @@ const Dashboard = () => {
 
                   <div className="dashboard-card-header40">
                     <span className="dashboard-name40">{item.name}</span>
-                    <span className="dashboard-date40">{item.date}</span>
+                    <span className="dashboard-date40">
+                      {new Date(item.createdAt).toLocaleDateString()}
+                    </span>
                   </div>
 
                   <div className="dashboard-card-body40">
                     <div><strong>Phone:</strong> {item.phone}</div>
                     <div><strong>Timings:</strong> {item.timings}</div>
                     <div><strong>Center:</strong> {item.center}</div>
+                    <div><strong>Booked For : </strong> {item.date}</div>
                   </div>
                 </div>
               ))}
