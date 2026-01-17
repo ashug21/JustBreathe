@@ -87,27 +87,11 @@
   box-shadow: 0 14px 40px rgba(35,86,86,0.25);
 }
 
-/* Responsive */
-@media (max-width: 980px) {
-  .gallery-masonry10 { grid-template-columns: repeat(2, 1fr); }
-}
 
-@media (max-width: 560px) {
-  .gallery-masonry10 { grid-template-columns: 1fr; }
-  .gallery-img10 { height: 190px; }
-}
 
-@media (max-width: 768px) {
-  .gallery10 {
-    padding: 56px 18px;
-  }
-
-  .gallery-title10 {
-    font-size: 26px;
-  }
-
-  .gallery-sub10 {
-    font-size: 14px;
+@media (max-width: 1200px) {
+  .gallery-wrapper10 {
+    max-width: 1100px;
   }
 
   .gallery-masonry10 {
@@ -119,11 +103,97 @@
   }
 }
 
-@media (max-width: 480px) {
-  .gallery10 {
-    padding: 48px 16px;
+@media (max-width: 1024px) {
+  .gallery {
+    padding: 60px 20px;
   }
 
+  .gallery-title10 {
+    font-size: 28px;
+  }
+
+  .gallery-sub10 {
+    font-size: 14.5px;
+  }
+
+  .gallery-masonry10 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .gallery-img10 {
+    height: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    padding: 56px 18px;
+  }
+
+  .gallery-masonry10 {
+    gap: 14px;
+  }
+
+  .gallery-img10 {
+    height: 190px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: 52px 16px;
+  }
+
+  .gallery-masonry10 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .gallery-img10 {
+    height: 210px;
+  }
+
+  .gallery-title10 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery {
+    padding: 48px 14px;
+  }
+
+  .gallery-sub10 {
+    font-size: 14px;
+  }
+
+  .gallery-img10 {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    padding: 44px 12px;
+  }
+
+  .gallery-masonry10 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .gallery-img10 {
+    height: 220px;
+  }
+
+  .gallery-cta10 {
+    padding: 12px 20px;
+    font-size: 14.5px;
+  }
+}
+
+@media (max-width: 375px) {
   .gallery-title10 {
     font-size: 24px;
   }
@@ -132,21 +202,16 @@
     font-size: 13.5px;
   }
 
-  .gallery-masonry10 {
-    gap: 14px;
-  }
-
   .gallery-img10 {
-    height: 185px;
-  }
-
-  .gallery-cta10 {
-    padding: 11px 20px;
-    font-size: 14px;
+    height: 210px;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 320px) {
+  .gallery {
+    padding: 40px 10px;
+  }
+
   .gallery-title10 {
     font-size: 22px;
   }
@@ -156,8 +221,11 @@
   }
 
   .gallery-img10 {
-    height: 170px;
+    height: 200px;
+  }
+
+  .gallery-cta10 {
+    padding: 11px 18px;
+    font-size: 14px;
   }
 }
-
-

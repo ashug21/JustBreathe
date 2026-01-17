@@ -177,3 +177,176 @@
     background: #EEF5F3;
   }
   
+
+  @media (max-width: 1200px) {
+    .timings-container20,
+    .timings-cta-container20 {
+      max-width: 1120px;
+    }
+  
+    .timings-grid20 {
+      gap: 20px;
+    }
+  
+    .timing-card20 {
+      padding: 24px 22px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .timings-section20 {
+      padding: 60px 18px;
+    }
+  
+    .timings-sub20 {
+      font-size: 30px;
+    }
+  
+    .timings-grid20 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+  
+    .timings-cta {
+      padding: 60px 18px 80px;
+    }
+  
+    .timings-cta-title20 {
+      font-size: 25px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .timings-section20 {
+      padding: 56px 16px;
+    }
+  
+    .timing-card20 {
+      padding: 24px 22px;
+    }
+  
+    .timing-day20 {
+      font-size: 17.5px;
+    }
+  
+    .timing-list20 li {
+      font-size: 14.8px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .timings-section20 {
+      padding: 52px 16px;
+    }
+  
+    .timings-sub20 {
+      font-size: 28px;
+    }
+  
+    .timings-grid20 {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  
+    .timings-header20::after {
+      margin-top: 16px;
+    }
+  
+    .timings-cta20 {
+      padding: 56px 16px 72px;
+    }
+  
+    .timings-cta-buttons20 {
+      gap: 16px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .timings-sub20 {
+      font-size: 26px;
+      letter-spacing: 0.5px;
+    }
+  
+    .timing-card20 {
+      padding: 22px 20px;
+    }
+  
+    .timing-list20 {
+      gap: 9px;
+    }
+  
+    .timings-btn20 {
+      padding: 13px 26px;
+      font-size: 14.8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .timings-section20 {
+      padding: 48px 14px;
+    }
+  
+    .timings-sub20 {
+      font-size: 24px;
+    }
+  
+    .timing-day20 {
+      font-size: 17px;
+    }
+  
+    .timing-list20 li {
+      font-size: 14.5px;
+    }
+  
+    .timings-cta-buttons20 {
+      flex-direction: column;
+      gap: 14px;
+    }
+  
+    .timings-btn20 {
+      width: 100%;
+      text-align: center;
+      padding: 14px 0;
+    }
+  
+    .gap-section-20 {
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .timings-sub20 {
+      font-size: 22px;
+    }
+  
+    .timings-cta-title20 {
+      font-size: 24px;
+    }
+  
+    .timing-list20 li {
+      font-size: 14.2px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .timings-section20 {
+      padding: 44px 12px;
+    }
+  
+    .timings-sub20 {
+      font-size: 21px;
+    }
+  
+    .timings-cta-title20 {
+      font-size: 22px;
+    }
+  
+    .timing-day20 {
+      font-size: 16.5px;
+    }
+  
+    .gap-section-20 {
+      height: 52px;
+    }
+  }
+  

@@ -74,3 +74,147 @@
     background: #A4A0C6;
     box-shadow: 0 18px 40px rgba(182, 178, 214, 0.38);
 }
+
+
+
+@media (max-width: 1200px) {
+    .location-cta-container21 {
+        padding: 44px 52px;
+        gap: 44px;
+    }
+
+    .location-cta-title21 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .location-cta21 {
+        padding: 68px 22px;
+    }
+
+    .location-cta-container21 {
+        padding: 42px 48px;
+        gap: 40px;
+    }
+
+    .location-cta-content21 {
+        max-width: 520px;
+    }
+
+    .location-cta-text21 {
+        font-size: 15.5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .location-cta21 {
+        padding: 64px 20px;
+    }
+
+    .location-cta-container21 {
+        padding: 40px 44px;
+        gap: 36px;
+    }
+
+    .location-btn21 {
+        padding: 13px 28px;
+        font-size: 14.8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .location-cta21 {
+        padding: 60px 18px;
+    }
+
+    .location-cta-container21 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 40px;
+        gap: 32px;
+    }
+
+    .location-cta-content21 {
+        max-width: 100%;
+    }
+
+    .location-cta-buttons21 {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+    .location-cta21 {
+        padding: 56px 16px;
+    }
+
+    .location-cta-container21 {
+        padding: 36px 32px;
+    }
+
+    .location-cta-title21 {
+        font-size: 26px;
+    }
+
+    .location-cta-text21 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-cta21 {
+        padding: 52px 14px;
+    }
+
+    .location-cta-container21 {
+        padding: 32px 24px;
+        gap: 28px;
+    }
+
+    .location-cta-title21 {
+        font-size: 24px;
+    }
+
+    .location-btn21 {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 0;
+    }
+
+    .location-cta-buttons21 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .location-cta-container21 {
+        padding: 30px 22px;
+    }
+
+    .location-cta-title21 {
+        font-size: 22.5px;
+    }
+
+    .location-cta-text21 {
+        font-size: 14.6px;
+    }
+}
+
+@media (max-width: 320px) {
+    .location-cta21 {
+        padding: 48px 12px;
+    }
+
+    .location-cta-container21 {
+        padding: 28px 20px;
+    }
+
+    .location-cta-title21 {
+        font-size: 21px;
+    }
+
+    .location-btn21 {
+        font-size: 14.2px;
+    }
+}

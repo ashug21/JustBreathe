@@ -82,20 +82,106 @@
     line-height: 1.7;
 }
 
+
+@media (max-width: 1200px) {
+    .whyus-container3 {
+        max-width: 1120px;
+        gap: 56px;
+    }
+
+    .whyus-cards3 {
+        gap: 30px;
+    }
+
+    .whyus-card3 {
+        padding: 36px 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .whyus-section3 {
+        padding: 90px 22px;
+    }
+
+    .whyus-title3 {
+        font-size: 38px;
+    }
+
+    .whyus-cards3 {
+        gap: 28px;
+    }
+
+    .whyus-card-title3 {
+        font-size: 20px;
+    }
+
+    .whyus-card-text3 {
+        font-size: 15.2px;
+    }
+}
+
 @media (max-width: 900px) {
+    .whyus-section3 {
+        padding: 86px 20px;
+    }
+
+    .whyus-container3 {
+        gap: 52px;
+    }
+
+    .whyus-cards3 {
+        gap: 26px;
+    }
+
+    .whyus-card3 {
+        padding: 34px 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .whyus-section3 {
+        padding: 82px 18px;
+    }
+
+    .whyus-title3 {
+        font-size: 36px;
+    }
+
     .whyus-cards3 {
         grid-template-columns: repeat(2, 1fr);
-        gap: 28px;
+        gap: 26px;
+    }
+
+    .whyus-card-text3 {
+        line-height: 1.65;
+    }
+}
+
+@media (max-width: 640px) {
+    .whyus-section3 {
+        padding: 76px 16px;
+    }
+
+    .whyus-container3 {
+        gap: 46px;
     }
 
     .whyus-title3 {
         font-size: 34px;
     }
+
+    .whyus-card3 {
+        padding: 32px 26px;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     .whyus-section3 {
-        padding: 76px 18px;
+        padding: 70px 14px;
+    }
+
+    .whyus-title3 {
+        font-size: 32px;
     }
 
     .whyus-cards3 {
@@ -103,11 +189,44 @@
         gap: 24px;
     }
 
+    .whyus-card-title3 {
+        font-size: 19px;
+    }
+
+    .whyus-card-text3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+    .whyus-title3 {
+        font-size: 30px;
+    }
+
+    .whyus-card3 {
+        padding: 30px 24px;
+    }
+
+    .whyus-card-text3 {
+        font-size: 14.6px;
+    }
+}
+
+@media (max-width: 320px) {
+    .whyus-section3 {
+        padding: 64px 12px;
+    }
+
     .whyus-title3 {
         font-size: 28px;
     }
 
-    .whyus-card3 {
-        padding: 30px 26px;
+    .whyus-card-title3 {
+        font-size: 18.5px;
+    }
+
+    .whyus-card-text3 {
+        font-size: 14.2px;
+        line-height: 1.6;
     }
 }

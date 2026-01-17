@@ -56,56 +56,45 @@
     box-shadow: 0 20px 46px rgba(35,86,86,0.18);
   }
   
-  @media (max-width: 980px) {
-    .galleryPage-grid12 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 560px) {
-    .galleryPage-grid12 {
-      grid-template-columns: 1fr;
-    }
-    .galleryPage-media12 {
-      height: 200px;
-    }
-  }
 
-  @media (max-width: 768px) {
-    .galleryPage12 {
-      padding: 64px 18px;
-    }
-  
-    .galleryPage-title12 {
-      font-size: 28px;
-    }
-  
-    .galleryPage-sub12 {
-      font-size: 15px;
-      margin-bottom: 32px;
-    }
-  
+  @media (max-width: 1200px) {
     .galleryPage-grid12 {
+      max-width: 1120px;
       gap: 16px;
     }
   
     .galleryPage-media12 {
-      height: 230px;
+      height: 250px;
     }
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: 1024px) {
     .galleryPage12 {
-      padding: 56px 16px;
+      padding: 72px 20px;
     }
   
     .galleryPage-title12 {
-      font-size: 26px;
+      font-size: 30px;
     }
   
     .galleryPage-sub12 {
-      font-size: 14.5px;
-      margin-bottom: 28px;
+      font-size: 15.5px;
+      margin-bottom: 36px;
+    }
+  
+    .galleryPage-grid12 {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+  
+    .galleryPage-media12 {
+      height: 240px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .galleryPage12 {
+      padding: 68px 18px;
     }
   
     .galleryPage-grid12 {
@@ -113,13 +102,84 @@
     }
   
     .galleryPage-media12 {
-      height: 210px;
+      height: 230px;
     }
   }
   
-  @media (max-width: 360px) {
+  @media (max-width: 768px) {
+    .galleryPage12 {
+      padding: 64px 16px;
+    }
+  
+    .galleryPage-title12 {
+      font-size: 28px;
+    }
+  
+    .galleryPage-grid12 {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+  
+    .galleryPage-media12 {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .galleryPage12 {
+      padding: 60px 14px;
+    }
+  
+    .galleryPage-sub12 {
+      font-size: 15px;
+      margin-bottom: 32px;
+    }
+  
+    .galleryPage-media12 {
+      height: 240px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .galleryPage12 {
+      padding: 56px 12px;
+    }
+  
+    .galleryPage-title12 {
+      font-size: 26px;
+    }
+  
+    .galleryPage-grid12 {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+  
+    .galleryPage-media12 {
+      height: 260px;
+    }
+  }
+  
+  @media (max-width: 375px) {
     .galleryPage-title12 {
       font-size: 24px;
+    }
+  
+    .galleryPage-sub12 {
+      font-size: 14.5px;
+    }
+  
+    .galleryPage-media12 {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .galleryPage12 {
+      padding: 52px 10px;
+    }
+  
+    .galleryPage-title12 {
+      font-size: 22px;
     }
   
     .galleryPage-sub12 {
@@ -127,8 +187,7 @@
     }
   
     .galleryPage-media12 {
-      height: 190px;
+      height: 240px;
     }
   }
-  
   

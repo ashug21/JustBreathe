@@ -217,64 +217,172 @@ select.input7:not([value=""]) + .label7 {
     opacity: 0.7;
 }
 
-/* responsive */
-@media (max-width: 980px) {
+
+@media (max-width: 1200px) {
     .book-hero7 {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        margin: 28px auto;
-    }
-
-    .book-visual7 {
-        min-height: 260px;
-        border-radius: 14px;
-        padding: 20px;
-    }
-
-    .card-inner7 {
-        padding: 28px;
+        grid-template-columns: 1fr 520px;
+        gap: 44px;
     }
 
     .visual-title7 {
-        font-size: 28px;
+        font-size: 34px;
+    }
+
+    .card-inner7 {
+        padding: 34px;
     }
 }
 
+@media (max-width: 1024px) {
+    .book-hero7 {
+        grid-template-columns: 1fr 480px;
+        gap: 40px;
+        margin: 44px auto;
+    }
 
+    .book-visual7 {
+        min-height: 400px;
+    }
 
-@media (max-width: 520px) {
+    .visual-overlay7 {
+        padding: 40px;
+    }
+
+    .visual-title7 {
+        font-size: 32px;
+    }
+
+    .visual-sub7 {
+        font-size: 15.5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .book-hero7 {
+        grid-template-columns: 1fr 440px;
+        gap: 36px;
+    }
+
     .card-inner7 {
-        padding: 22px;
-        border-radius: 12px;
+        padding: 32px;
+    }
+
+    .card-heading7 {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-hero7 {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        margin: 40px auto;
+    }
+
+    .book-visual7 {
+        min-height: 360px;
+    }
+
+    .visual-overlay7 {
+        padding: 36px;
     }
 
     .visual-content7 {
         max-width: 100%;
     }
 
+    .card-inner7 {
+        max-width: 100%;
+    }
+
     .row7 {
-        flex-direction: column;
+        gap: 10px;
     }
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 640px) {
     .book-hero7 {
-        padding: 0 20px;
-        gap: 24px;
+        padding: 0 18px;
+        gap: 32px;
+    }
+
+    .book-visual7 {
+        min-height: 340px;
+        border-radius: 20px;
+    }
+
+    .visual-title7 {
+        font-size: 30px;
+    }
+
+    .visual-sub7 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .card-inner7 {
+        padding: 30px;
+    }
+
+    .input7 {
+        font-size: 14.5px;
+    }
+
+    .label7 {
+        font-size: 14.5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-hero7 {
+        padding: 0 14px;
+        gap: 28px;
+    }
+
+    .book-visual7 {
+        min-height: 320px;
     }
 
     .visual-overlay7 {
-        padding: 36px;
-        gap: 16px;
+        padding: 28px;
     }
 
+    .visual-title7 {
+        font-size: 28px;
+    }
+
+    .visual-ornament7 {
+        width: 72px;
+        height: 72px;
+    }
+
+    .row7 {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .card-inner7 {
+        padding: 28px 24px;
+    }
+
+    .submit7 {
+        font-size: 15.5px;
+    }
+
+    .card-foot7 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 375px) {
     .visual-title7 {
         font-size: 26px;
     }
 
     .visual-sub7 {
-        font-size: 15px;
+        font-size: 14.5px;
     }
 
     .card-heading7 {
@@ -284,64 +392,38 @@ select.input7:not([value=""]) + .label7 {
     .card-lead7 {
         font-size: 13.5px;
     }
+
+    .input7 {
+        padding: 15px 13px 13px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     .book-hero7 {
-        margin: 24px auto;
-        padding: 0 16px;
+        padding: 0 12px;
+    }
+
+    .book-visual7 {
+        min-height: 300px;
     }
 
     .visual-overlay7 {
-        padding: 28px;
+        padding: 24px;
     }
 
     .visual-title7 {
         font-size: 24px;
     }
 
-    .visual-sub7 {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-
     .card-inner7 {
-        padding: 20px;
-    }
-
-    .input7 {
-        font-size: 14px;
-        padding: 15px 13px 13px 13px;
-    }
-
-    .label7 {
-        font-size: 14px;
+        padding: 24px 20px;
     }
 
     .submit7 {
         font-size: 15px;
-        padding: 13px 14px;
     }
 
     .foot-note7 {
         font-size: 12.5px;
-    }
-}
-
-@media (max-width: 360px) {
-    .visual-title7 {
-        font-size: 22px;
-    }
-
-    .visual-sub7 {
-        font-size: 13.5px;
-    }
-
-    .card-heading7 {
-        font-size: 18.5px;
-    }
-
-    .submit7 {
-        font-size: 14px;
     }
 }
